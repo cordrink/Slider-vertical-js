@@ -13,7 +13,7 @@ body {
     height: 100vh;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .grid {
@@ -187,4 +187,50 @@ body {
 
 .b3 {
     grid-area: 2 / 1 / 4 / 3;
+}
+
+/* Anomations CSS */
+
+.animBtn {
+    animation: denied .4s forwards;
+}
+
+@keyframes denied {
+    0% {
+        transform: translateX(0);
+        background: rgb(218, 218, 218);
+    }
+    20% {
+        transform: translateX(-5px);
+    }
+    40% {
+        transform: translateX(5px);
+        background: #ff7569;
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    80% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+        background: rgb(218, 218, 218);
+    }
+}
+
+.animBtnGood {
+    animation: good .3s forwards;
+}
+
+@keyframes good {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.9);
+    }
+    0% {
+        transform: scale(1);
+    }
 }
